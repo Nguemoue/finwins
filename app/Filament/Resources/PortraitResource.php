@@ -14,6 +14,10 @@ use Filament\Tables\Actions\BulkActionGroup;
 use Filament\Tables\Actions\DeleteAction;
 use Filament\Tables\Actions\DeleteBulkAction;
 use Filament\Tables\Actions\EditAction;
+use Filament\Tables\Actions\ExportAction;
+use Filament\Tables\Actions\ExportBulkAction;
+use Filament\Tables\Actions\ViewAction;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 
@@ -61,22 +65,23 @@ class PortraitResource extends Resource
                 TextColumn::make('name')
                     ->searchable()
                     ->sortable(),
+                ImageColumn::make('poster'),
+                TextColumn::make('occupation')->html(),
 
-                TextColumn::make('occupation'),
+                TextColumn::make('bio')->html()->limit(20),
 
-                TextColumn::make('bio'),
-
-                TextColumn::make('poster'),
             ])
             ->filters([
                 //
             ])
             ->actions([
+                ViewAction::make(),
                 EditAction::make(),
                 DeleteAction::make(),
             ])
             ->bulkActions([
                 BulkActionGroup::make([
+                    ExportBulkAction::make(),
                     DeleteBulkAction::make(),
                 ]),
             ]);

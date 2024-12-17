@@ -26,6 +26,7 @@ class AdminPanelProvider extends PanelProvider
             ->default(false)
             ->profile(isSimple: false)
             ->registration()
+            ->passwordReset()
             ->topNavigation(true)
             ->id('admin')
             ->path('admin')

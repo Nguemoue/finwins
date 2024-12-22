@@ -74,6 +74,27 @@
                     <p class="founder-name">Martine-Cécile Ngo Nyemb-Wisman</p>
                 </div>
             </div>
+            <div class="presentation-container">
+                <div class="row">
+                    <div class="col-md-6 image-container">
+                        <!-- Image de Martine-Cécile Ngo Nyemb-Wisman -->
+                        <img src="{{asset('assets/img/wiseman-logo.gif')}}" alt="logo">
+                        <p>
+                            Dr Martine-Cécile
+                            NGO NYEMB-WISMAN
+
+                            Martine Cécile Wisman - Ngo Nyemb est détentrice d’un doctorat en Sciences politiques et sociales de l’UCL en Belgique. Sa réflexion et ses actions portent essentiellement sur la thématique du genre et développement.
+
+                            Ses travaux sont consacrés aux pratiques d’autonomisation des acteurs de l’économie populaire et solidaire, spécialement au rôle des commerçantes des denrées alimentaires dans le progrès socio-économique et politique en Afrique subsaharienne.
+
+                            Fondatrice de l’Asbl FINS-WINS en Belgique et de la Coopérative Agropastorale des Femmes Bayam-Sellam du Cameroun (CAFBS), elle est lauréate du Prix de l’Action féminine de l’Union des Femmes Africaines (UFA) à Bruxelles en 2009.
+
+                            Elle est à ce jour, Directrice Générale de Marena Trading Consulting & Financing S.A et PCA de la CAFBS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </section>

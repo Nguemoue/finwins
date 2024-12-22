@@ -1,9 +1,8 @@
-<div >
-    <ul style="list-style-type: upper-latin" class="d-flex flex-row gap-1 flex-wrap my-4">
-        @foreach($objectives as $objective)
-            <li >
-                {{str($objective->content)->toHtmlString()}}
-            </li>
-        @endforeach
-    </ul>
+<div class="row">
+    @foreach($objectives as $objective)
+        <div class="col-sm-12 col-xs-12 col-md-6 col-xl-6 col-lg-6 col-xxl-6">
+            {{str($objective->content)->toHtmlString()}}
+        </div>
+    @endforeach
 </div>
+

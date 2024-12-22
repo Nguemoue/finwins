@@ -2433,3 +2433,11 @@ span.date {
     background-color: #ffb451;
     color: #fff;
 }
+.letter{
+    padding:0 5px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 80%;
+    display: inline-block;
+}

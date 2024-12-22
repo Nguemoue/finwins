@@ -31,13 +31,6 @@
                                             <div class="slider-text">
                                                 <h1 class="wow cssanimation fadeInTop" data-wow-delay="1s" data-wow-duration="800ms">
                                                     Together we <br>can make a Difference</h1>
-                                                <p class="wow cssanimation fadeInBottom" data-wow-delay="1s">Help today because tomorrow you
-                                                    may be the one who needs helping! <br>Forget what you can get and see what you can give.
-                                                </p>
-                                                <a href="#" class="default-btn wow cssanimation fadeInBottom" data-wow-delay="0.8s">Join
-                                                    With Us</a>
-                                                <a href="#" class="default-btn wow cssanimation fadeInBottom" data-wow-delay="0.8s">Donet
-                                                    Now</a>
                                             </div>
                                         </div>
                                     </div>
@@ -48,16 +41,10 @@
                                     <div class="table-cell">
                                         <div class="container">
                                             <div class="slider-text">
-                                                <h5 class="wow cssanimation fadeInBottom">Join Us Today</h5>
-                                                <h1 class="wow cssanimation lePushReleaseFrom sequence" data-wow-delay="1s">Give a little.
-                                                    Change a lot.</h1>
+
                                                 <p class="wow cssanimation fadeInTop" data-wow-delay="1s">Help today because tomorrow you
                                                     may be the one who needs helping! <br>Forget what you can get and see what you can give.
                                                 </p>
-                                                <a href="#" class="default-btn wow cssanimation fadeInBottom" data-wow-delay="0.8s">Join
-                                                    With Us</a>
-                                                <a href="#" class="default-btn wow cssanimation fadeInBottom" data-wow-delay="0.8s">Donet
-                                                    Now</a>
                                             </div>
                                         </div>
                                     </div>

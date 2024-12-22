@@ -20,10 +20,14 @@
                 <div class="row contact-wrap">
                     <div class="col-md-6 xs-padding">
                         <div class="contact-info">
-                            <h3>Get in touch</h3>
-                            <p>The secret to happiness lies in helping others. Never underestimate the difference YOU can make
-                                in the lives of the poor, the abused and the helpless.</p>
-                            <p>The secret to happiness lies in helping others. Never underestimate the difference.</p>
+                            <h3>Coordonees</h3>
+                            <p>Tel:</p>
+                            <p>Fax: The secret to happiness lies in helping others. Never underestimate the difference.</p>
+                            <p>E-Mail: The secret to happiness lies in helping others. Never underestimate the difference.</p>
+                            <h3>Reseaux Sociaux</h3>
+                            <hr>
+                            <h3>Soutiens et dons</h3>
+                            <p>Numero de compte</p>
                             <ul>
                                 <li><i class="ti-location-pin"></i> 315 West 33rd Street New York, NY 10001</li>
                                 <li><i class="ti-mobile"></i> +1 212 425 8617, +1 212 425 8533</li>

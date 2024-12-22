@@ -78,10 +78,10 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-xl-6 col-xxl-6">
                     <div class="presentation-container">
-                        <div class="row">
-                            <div class="col-md-6 image-container">
+                        <div class="">
+                            <div class="image-container">
                                 <!-- Image de Martine-Cécile Ngo Nyemb-Wisman -->
-                                <div class="text-center"><img src="{{asset('assets/img/wiseman-logo.gif')}}" alt="logo"></div>
+                                <div class="text-center mb-4"><img src="{{asset('assets/img/wiseman-logo.gif')}}" alt="logo"></div>
                                 <p>
                                     Dr Martine-Cécile
                                     NGO NYEMB-WISMAN

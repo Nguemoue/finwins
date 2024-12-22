@@ -1,6 +1,9 @@
 <?php
 
 return [
+    'fax'=>'+32 (0) 10 88 10 53',
+    'email'=>'info@fin-wins.org',
+    'bank_number'=>"BE92 3631 2477 9123",
     'developer_infos'=>["name"=>"GoulBam",'link'=>'https://goulbam.com'],
     'footer'=>[
         'social_links'=>[

@@ -5,7 +5,7 @@
         <div class="pager-header">
             <div class="container">
                 <div class="page-content">
-                    <h2>Contact  Us</h2>
+                    <h2>Contact Us</h2>
                     <p>Help today because tomorrow you may be the one who <br>needs more helping!</p>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="{{route('frontend.home')}}">Home</a></li>
@@ -17,25 +17,8 @@
         <section class="contact-section padding">
             <div id="google_map"></div>
             <div class="container">
-                <div class="row contact-wrap">
-                    <div class="col-md-6 xs-padding">
-                        <div class="contact-info">
-                            <h3>Coordonees</h3>
-                            <p>Tel:</p>
-                            <p>Fax: The secret to happiness lies in helping others. Never underestimate the difference.</p>
-                            <p>E-Mail: The secret to happiness lies in helping others. Never underestimate the difference.</p>
-                            <h3>Reseaux Sociaux</h3>
-                            <hr>
-                            <h3>Soutiens et dons</h3>
-                            <p>Numero de compte</p>
-                            <ul>
-                                <li><i class="ti-location-pin"></i> 315 West 33rd Street New York, NY 10001</li>
-                                <li><i class="ti-mobile"></i> +1 212 425 8617, +1 212 425 8533</li>
-                                <li><i class="ti-email"></i> <a href="mailto:{{config('projects.footer.email')}}">{{config('projects.footer.email')}}</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="row contact-wrap align-items-baseline">
+
                     <div class="col-md-6 xs-padding">
                         <div class="contact-form">
                             <h3>Laissez nous un message</h3>
@@ -50,7 +33,8 @@
                                                required>
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="email" id="email" name="email" class="form-control" placeholder="Email"
+                                        <input type="email" id="email" name="email" class="form-control"
+                                               placeholder="Email"
                                                required>
                                     </div>
                                 </div>
@@ -62,11 +46,39 @@
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-md-12">
-                                        <button id="submit" class="default-btn" type="submit">Envoyer le message</button>
+                                        <button id="submit" class="default-btn" type="submit">Envoyer le message
+                                        </button>
                                     </div>
                                 </div>
                                 <div id="form-messages" class="alert" role="alert"></div>
                             </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 xs-padding">
+                        <div class="contact-info">
+                            <h3>Coordonees</h3>
+                            <p>Tel: {{config('projects.footer.phone_number')}}</p>
+                            <p>Fax: {{config('projects.fax')}}</p>
+                            <p>E-Mail: {{config('projects.email')}}</p>
+                            <h3>Reseaux Sociaux</h3>
+                            <hr>
+                            <h3>Soutiens et dons</h3>
+                            <p>Numero de compte: {{config('projects.bank_number')}}</p>
+                            <div class="card">
+                                <div class="card-header">DONATEURS</div>
+                                <div class="card-body">
+                                    <ul>
+                                        <li>PING PROPERTIES B.V. NL - Amsterdam</li>
+                                        <li>ESGEVIE BEHEER B.V. NL - Soest</li>
+                                        <li>STEARKO HOLDING B.V. NL - Amsterdam</li>
+                                        <li>MAKANO INTERNATIONAL B.V. NL - Groningen</li>
+                                        <li>AQUILA BEHHER B.V. NL - Breda</li>
+                                        <li>NED - USA</li>
+                                        <li>TRADEX S.A - Cameroun</li>
+                                        <li>MARENA S.A - Belgique</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

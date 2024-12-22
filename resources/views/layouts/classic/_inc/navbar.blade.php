@@ -34,7 +34,7 @@
                     <ul id="mainmenu" class="nav navbar-nav nav-menu">
                         <li @class(['active'=>request()->routeIs('frontend.home')])><a @class(['active'=>request()->routeIs('frontend.home')]) href="{{route('frontend.home')}}"><i class="fa fa-home"></i> Home</a></li>
                         <li @class(['active'=>request()->routeIs('frontend.members')])><a @class(['active'=>request()->routeIs('frontend.members')]) href="{{route('frontend.members')}}"><i class="fa fa-users"></i> Membres</a></li>
-{{--                        <li @class(['active'=>request()->routeIs('frontend.about')])><a @class(['active'=>request()->routeIs('frontend.about')]) href="{{route('frontend.about')}}"> <i class="fa fa-map-marker"></i> About</a></li>--}}
+                        {{--<li @class(['active'=>request()->routeIs('frontend.about')])><a @class(['active'=>request()->routeIs('frontend.about')]) href="{{route('frontend.about')}}"> <i class="fa fa-map-marker"></i> About</a></li>--}}
                         <li @class(['active'=>request()->routeIs('frontend.portraits')])><a @class(['active'=>request()->routeIs('frontend.portraits')]) href="{{route('frontend.portraits')}}"> <i class="fa fa-photo"></i> Portraits</a></li>
                         <li @class(['active'=>request()->routeIs('frontend.presentation')])><a @class(['active'=>request()->routeIs('frontend.presentation')]) href="{{route('frontend.presentation')}}"> <i class="fa fa-hand-paper-o"></i> Presentation</a></li>
                         <li @class(['active'=>request()->routeIs('frontend.agenda')])><a @class(['active'=>request()->routeIs('frontend.agenda')]) href="{{route('frontend.agenda')}}"> <i class="fa fa-calendar"></i> Agenda</a></li>

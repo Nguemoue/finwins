@@ -12,6 +12,9 @@ Route::get("members", FrontendMemberController::class)->name('frontend.members')
 Route::get("portraits", FrontendPortraitController::class)->name('frontend.portraits');
 Route::get("presentation", \App\Http\Controllers\Frontend\FrontendPresentationController::class)->name('frontend.presentation');
 Route::get("agenda", \App\Http\Controllers\Frontend\FrontendAgendaController::class)->name('frontend.agenda');
+Route::get("about", \App\Http\Controllers\Frontend\FrontendAboutController::class)->name('frontend.about');
+Route::get("contact", \App\Http\Controllers\Frontend\FrontendContactController::class)->name('frontend.contact');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -22,4 +25,4 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

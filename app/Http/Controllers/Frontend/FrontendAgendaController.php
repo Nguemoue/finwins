@@ -9,7 +9,7 @@ class FrontendAgendaController extends Controller
 {
     public function __invoke()
     {
-        $agenda = Agenda::query()->get();
+        $agenda = Agenda::query()->latest()->get();
         return view('frontend.agenda',[
             'agenda'=>$agenda
         ]);

@@ -13,10 +13,10 @@
         <div class="container">
             @foreach($agenda->groupBy(fn(Agenda $agenda) => $agenda->created_at->year) as $year=> $groups)
                 <div class="mb-4">
-                    <h2 class="text-muted">AGENDA {{$year}}</h2>
+                    <h2 class="text-black">AGENDA {{$year}}</h2>
                     <div id="accordion-{{$year}}">
                         @foreach($groups as $item)
-                            <div class="card">
+                            <div class="card mb-4">
                                 <div style="cursor: pointer" class="card-header cursor-pointer d-flex justify-content-between" id="headingOne" data-toggle="collapse"
                                      data-target="#collapseOne-{{$year}}-{{$item->id}}" aria-expanded="true"
                                      aria-controls="collapseOne">
@@ -28,7 +28,7 @@
                                     </div>
                                 </div>
 
-                                <div id="collapseOne-{{$year}}-{{$item->id}}" class="collapse show"
+                                <div id="collapseOne-{{$year}}-{{$item->id}}" @class(["collapse","show"=>$loop->first])
                                      aria-labelledby="headingOne" data-parent="#accordion-{{$year}}">
                                     <div class="card-body">
                                         {{str($item->content)->toHtmlString()}}

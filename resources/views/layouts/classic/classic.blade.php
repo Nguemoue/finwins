@@ -187,7 +187,6 @@
 
 <script src="{{asset('assets/js/vendor/wow.min.js')}}"></script>
 
-<script src="{{asset('assets/js/contact.js')}}"></script>
 
 <script src="{{asset('assets/js/main.js')}}"></script>
 @stack('scripts')

@@ -3,9 +3,8 @@
         <div class="widget-wrap row">
             <div class="col-md-4 xs-padding">
                 <div class="widget-content">
-                    <img src="{{asset('assets/img/logo-light.png')}}" alt="logo">
-                    <p>The secret to happiness lies in helping others. Never underestimate the difference YOU can make
-                        in the lives of the poor</p>
+                    <img src="{{asset('assets/img/logo.png')}}" alt="logo">
+                    <p>{{config('projects.footer.description')}}</p>
                     <ul class="social-icon">
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -30,13 +29,10 @@
                 <div class="widget-content">
                     <h3>{{config('app.name')}}</h3>
                     <ul class="address">
-                        <li><i class="ti-email"></i> <a href="https://html.dynamiclayers.net/cdn-cgi/l/email-protection"
-                                                        class="__cf_email__"
-                                                        data-cfemail="2861464e476871475d5a6c4745494146064b4745">[email&#160;protected]</a>
-                        </li>
-                        <li><i class="ti-mobile"></i> +(333) 052 39876</li>
-                        <li><i class="ti-world"></i> Www.YourWebsite.com</li>
-                        <li><i class="ti-location-pin"></i> 60 Grand Avenue. Central New Road 0708, USA</li>
+                        <li><i class="ti-email"></i> <a>{{config('projects.footer.email')}}</a></li>
+                        <li><i class="ti-mobile"></i> {{config('projects.footer.phone_number')}}</li>
+                        <li><i class="ti-world"></i> {{config('projects.footer.company_link')}}</li>
+                        <li><i class="ti-location-pin"></i> {{config('projects.footer.address')}}</li>
                     </ul>
                 </div>
             </div>
@@ -47,7 +43,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 sm-padding">
-                <div class="copyright">&copy; 2021 Charitify Powered by DynamicLayers</div>
+                <div class="copyright">&copy; {{date('Y')}} {{config('app.name')}} Powered by <a href="{{config('projects.developer_infos.name')}}" target="_blank">{{config('projects.developer_infos.name')}}</a></div>
             </div>
             <div class="col-md-6 sm-padding">
                 <ul class="footer-social">

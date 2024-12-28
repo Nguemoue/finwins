@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\MediaResource\Pages;
+namespace App\Filament\Resources\DonatorResource\Pages;
 
-use App\Filament\Resources\MediaResource;
+use App\Filament\Resources\DonatorResource;
 use Filament\Actions\DeleteAction;
 use Filament\Resources\Pages\EditRecord;
 
-class EditMedia extends EditRecord
+class EditDonator extends EditRecord
 {
-    protected static string $resource = MediaResource::class;
+    protected static string $resource = DonatorResource::class;
 
     protected function getHeaderActions(): array
     {

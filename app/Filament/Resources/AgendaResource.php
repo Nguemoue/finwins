@@ -25,7 +25,7 @@ class AgendaResource extends Resource
 
     protected static ?string $slug = 'agendas';
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-calendar-days';
 
     public static function form(Form $form): Form
     {

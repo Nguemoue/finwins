@@ -10,6 +10,7 @@ return new class extends Migration {
         Schema::create('media_groups',  static function (Blueprint $table) {
             $table->id();
             $table->string('label');
+            $table->string('poster')->nullable();
             $table->date('published_at');
             $table->text('description')->nullable();
             $table->foreignId('media_type_id');

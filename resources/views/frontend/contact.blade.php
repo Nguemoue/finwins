@@ -57,25 +57,22 @@
                     <div class="col-md-6 xs-padding">
                         <div class="contact-info">
                             <h3>Coordonees</h3>
-                            <p>Tel: {{config('projects.footer.phone_number')}}</p>
-                            <p>Fax: {{config('projects.fax')}}</p>
-                            <p>E-Mail: {{config('projects.email')}}</p>
+                            <p>Tel: {{$phoneNumber}}</p>
+                            <p>Fax: {{$faxNumber}}</p>
+                            <p>E-Mail: {{$email}}</p>
                             <h3>Reseaux Sociaux</h3>
                             <hr>
                             <h3>Soutiens et dons</h3>
-                            <p>Numero de compte: {{config('projects.bank_number')}}</p>
+                            <p>Numero de compte: {{$bankAccount}}</p>
                             <div class="card">
                                 <div class="card-header">DONATEURS</div>
                                 <div class="card-body">
                                     <ul>
-                                        <li>PING PROPERTIES B.V. NL - Amsterdam</li>
-                                        <li>ESGEVIE BEHEER B.V. NL - Soest</li>
-                                        <li>STEARKO HOLDING B.V. NL - Amsterdam</li>
-                                        <li>MAKANO INTERNATIONAL B.V. NL - Groningen</li>
-                                        <li>AQUILA BEHHER B.V. NL - Breda</li>
-                                        <li>NED - USA</li>
-                                        <li>TRADEX S.A - Cameroun</li>
-                                        <li>MARENA S.A - Belgique</li>
+                                        @foreach($givers as $giver)
+
+                                            <li>{{$giver->name}} - {{$giver->address}}</li>
+                                        @endforeach
+
                                     </ul>
                                 </div>
                             </div>

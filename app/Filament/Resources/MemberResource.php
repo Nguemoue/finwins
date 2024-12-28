@@ -27,7 +27,8 @@ class MemberResource extends Resource
 
     protected static ?string $slug = 'members';
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-users';
+    protected static ?string $navigationGroup = "Administration";
 
     public static function form(Form $form): Form
     {

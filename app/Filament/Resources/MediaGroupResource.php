@@ -30,15 +30,17 @@ class MediaGroupResource extends Resource
     protected static ?string $model = MediaGroup::class;
 
     protected static ?string $slug = 'media-groups';
+    protected static ?string $navigationLabel = "Media";
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-film';
+    protected static ?string $navigationGroup = "Administration";
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
                 TextInput::make('label')
-                    ->label("Intitule du groupe")
+                    ->label("Label")
                     ->required(),
 
                 DatePicker::make('published_at')
@@ -48,14 +50,22 @@ class MediaGroupResource extends Resource
 
                 Textarea::make('description')
                     ->nullable(),
+                FileUpload::make('poster')
+                    ->image()
+                    ->imageCropAspectRatio("1:1")
+                    ->directory("uploads/poster")
+                    ->imageEditor(),
 
                 Select::make('media_type_id')
                     ->relationship('mediaType', 'name')
-                    ->preload()
-                    ->searchable()
+                    ->native(false)
                     ->createOptionModalHeading("Creation d'un nouveau type")
                     ->createOptionForm([
-                        TextInput::make(name: "name")
+                        Select::make(name: "name")
+                            ->options([
+                                "image"=>"Images",
+                                "video"=>"Videos"
+                            ])
                             ->required()
                             ->unique(MediaType::class)
                     ])
@@ -63,10 +73,12 @@ class MediaGroupResource extends Resource
 
                 Placeholder::make('created_at')
                     ->label('Created Date')
+                    ->visibleOn('edit')
                     ->content(fn(?MediaGroup $record): string => $record?->created_at?->diffForHumans() ?? '-'),
 
                 Placeholder::make('updated_at')
                     ->label('Last Modified Date')
+                    ->visibleOn('edit')
                     ->content(fn(?MediaGroup $record): string => $record?->updated_at?->diffForHumans() ?? '-'),
             ]);
     }
@@ -135,33 +147,5 @@ class MediaGroupResource extends Resource
             MediaRelationManager::class
         ];
     }
-    protected function getActions(): array
-    {
-        return [
-            Action::make('uploadMedia')
-                ->label('Télécharger des Médias')
-                ->action('openUploadModal')
-                ->modalHeading('Télécharger des Médias')
-                ->modalContent(view('filament.media-upload-modal')),
-        ];
-    }
-    public function openUploadModal()
-    {
-        // Logique pour ouvrir le modal
-        $this->dispatchBrowserEvent('open-upload-modal');
-    }
 
-
-        protected function afterSave(): void
-    {
-        $mediaFiles = $this->form->getState()['media_file_names'] ?? [];
-
-        foreach ($mediaFiles as $fileName) {
-            // Enregistrer chaque fichier dans la table media
-            $this->record->media()->create([
-                'file_path' => Storage::disk('public')->url($fileName),
-                'description' => '', // Vous pouvez ajouter une description si nécessaire
-            ]);
-        }
-    }
 }

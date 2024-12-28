@@ -27,7 +27,8 @@ class PortraitResource extends Resource
 
     protected static ?string $slug = 'portraits';
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-photo';
+    protected static ?string $navigationGroup = "Administration";
 
     public static function form(Form $form): Form
     {

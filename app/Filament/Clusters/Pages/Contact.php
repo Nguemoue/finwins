@@ -55,7 +55,7 @@ class Contact extends Page
                 Textarea::make("address")
                     ->required()
                     ->label("address")
-            ])->collapsible(),
+            ])->collapsible()->columns(),
 
             Section::make("Information sociales")->schema([
                 TextInput::make("facebook_link")

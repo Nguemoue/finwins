@@ -21,7 +21,7 @@ class DiscoursPresident extends Page
     {
         return $form->schema([
             Forms\Components\RichEditor::make("president_speeches")
-                ->label('')
+                ->label('discours du president')
                 ->required()
                 ->columnSpanFull()
 

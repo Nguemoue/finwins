@@ -64,8 +64,8 @@ class Fondatrice extends Page
         return [
             Action::make("save")
                 ->label("Enregistrer")
-                ->requiresConfirmation()
-                ->modalHeading("Enregistrez")
+//                ->requiresConfirmation()
+//                ->modalHeading("Enregistrez")
                 ->action(function () {
                     $this->form->validate();
                     Setting::updateOrCreate([

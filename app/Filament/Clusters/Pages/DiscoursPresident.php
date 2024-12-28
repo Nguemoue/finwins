@@ -39,8 +39,8 @@ class DiscoursPresident extends Page
     {
         return [
             \Filament\Actions\Action::make('Sauvegarder')
-                ->requiresConfirmation()
-                ->modalHeading("Attention!")
+//                ->requiresConfirmation()
+//                ->modalHeading("Attention!")
                 ->action(function () {
                     $this->form->validate();
                     Setting::updateOrCreate(['label' => 'president_speeches'], [

@@ -44,8 +44,8 @@ class Presentation extends Page
     {
         return [
             Action::make("Sauvegarder")->icon('heroicon-o-pencil-square')
-                ->requiresConfirmation()
-                ->modalHeading("Attention!")
+//                ->requiresConfirmation()
+//                ->modalHeading("Attention!")
                 ->action(function () {
                     foreach ($this->state as $key => $value) {
                         Setting::updateOrCreate([

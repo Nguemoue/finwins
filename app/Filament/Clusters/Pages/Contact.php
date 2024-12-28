@@ -59,13 +59,17 @@ class Contact extends Page
 
             Section::make("Information sociales")->schema([
                 TextInput::make("facebook_link")
+                    ->prefixIcon('heroicon-o-link')
                     ->url(),
                 TextInput::make("twitter_link")
+                    ->prefixIcon('heroicon-o-link')
                     ->url(),
                 TextInput::make("instagram_link")
+                    ->prefixIcon('heroicon-o-link')
                     ->url(),
-                TextInput::make("site_web_url")->url(),
-            ])->collapsible(),
+                TextInput::make("site_web_url")->url()
+                ->prefixIcon('heroicon-o-globe-alt'),
+            ])->collapsible()->columns(),
         ])->statePath('data');
     }
 

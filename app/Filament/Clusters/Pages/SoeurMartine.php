@@ -24,6 +24,7 @@ class SoeurMartine extends Page
         return $form->schema([
             RichEditor::make('martine_description')
                 ->label('')
+                ->required()
                 ->columnSpanFull()
         ])->statePath('content');
     }
@@ -40,9 +41,14 @@ class SoeurMartine extends Page
                 ->requiresConfirmation()
                 ->modalHeading("Attention!")
                 ->action(function () {
+                    $this->form->validate();
                     Setting::updateOrCreate(['label' => 'martine_description'], [
                         'value' => $this->state['martine_description']
                     ]);
+                    Notification::make()
+                        ->title('Success !')
+                        ->success()
+                        ->body('Mis a jour effectue.')->send();
                 })
         ];
     }

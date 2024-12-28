@@ -67,6 +67,7 @@ class Fondatrice extends Page
                 ->requiresConfirmation()
                 ->modalHeading("Enregistrez")
                 ->action(function () {
+                    $this->form->validate();
                     Setting::updateOrCreate([
                         'label' => 'founder_poster'
                     ],[

@@ -22,6 +22,7 @@ class DiscoursPresident extends Page
         return $form->schema([
             Forms\Components\RichEditor::make("president_speeches")
                 ->label('')
+                ->required()
                 ->columnSpanFull()
 
         ])->statePath('state');
@@ -41,6 +42,7 @@ class DiscoursPresident extends Page
                 ->requiresConfirmation()
                 ->modalHeading("Attention!")
                 ->action(function () {
+                    $this->form->validate();
                     Setting::updateOrCreate(['label' => 'president_speeches'], [
                         'value' => $this->state['president_speeches']
                     ]);

@@ -7,6 +7,7 @@ use App\Models\Setting;
 use Filament\Actions\Action;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Form;
+use Filament\Notifications\Notification;
 use Filament\Pages\Page;
 
 class Presentation extends Page
@@ -53,6 +54,10 @@ class Presentation extends Page
                             'value'=>$value
                         ]);
                     }
+                    Notification::make()
+                        ->title('Success !')
+                        ->success()
+                        ->body('Mis a jour effectue.')->send();
                 })
         ];
     }

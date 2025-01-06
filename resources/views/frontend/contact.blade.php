@@ -2,18 +2,13 @@
 
 @section('content')
     <main>
-        <div class="pager-header">
+        <section class="team-section bg-grey bd-bottom circle shape padding">
             <div class="container">
-                <div class="page-content">
-                    <h2>Contact Us</h2>
-                    <p>Help today because tomorrow you may be the one who <br>needs more helping!</p>
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{{route('frontend.home')}}">Home</a></li>
-                        <li class="breadcrumb-item active">Contact</li>
-                    </ol>
+                <div class="section-heading text-center mb-40">
+                    <h2>Contact</h2>
                 </div>
             </div>
-        </div>
+        </section>
         <section class="contact-section padding">
             <div id="google_map"></div>
             <div class="container">

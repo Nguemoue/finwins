@@ -20,7 +20,7 @@
                     @foreach($portraits as $portrait)
                         <div class="col-12 mx-auto mb-5">
                             <div class="portrait-card row">
-                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-justify">
+                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-justify pt-2">
                                     <p class="portrait-name">{{ $portrait->name }}</p>
                                     <p class="portrait-bio">{{ $content= str($portrait->bio)->toHtmlString() }}</p>
                                 </div>

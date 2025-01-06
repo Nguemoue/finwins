@@ -20,10 +20,10 @@
                 </div>
                 <div class="col-sm-12 col-md-6 col-xl-6 col-xxl-6">
                     <div class="presentation-container">
-                        <div class="">
+                        <div class="px-4">
                             <div class="">
                                 <!-- Image de Martine-Cécile Ngo Nyemb-Wisman -->
-                                <div class="text-center mb-4"><img class="img-fluid img-thumbnail" style="object-fit: cover;max-height: 400px"  src="{{$founderPosterUrl}}" alt="logo"></div>
+                                <div class="text-justify mb-4"><img class="img-fluid img-thumbnail" style="object-fit: cover;max-height: 400px"  src="{{$founderPosterUrl}}" alt="logo"></div>
                             </div>
                             <div class="">
                                 <div>

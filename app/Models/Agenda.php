@@ -24,9 +24,9 @@ class Agenda extends Model
             get: function($value, array $attributes) {
                 //if date of start date is equal to end date
                 if ($this->start_date->toDateString() !==  $this->end_date->toDateString()){
-                       return 'Du ' .$this->start_date->day .' au '. $this->end_date->day . ' '. $this->end_date->monthName;
+                       return 'du ' .$this->start_date->day .' au '. $this->end_date->day . ' '. $this->end_date->monthName;
                 }
-                return 'Le '. $this->end_date->day . ' '. $this->end_date->monthName;
+                return 'le '. $this->end_date->day . ' '. $this->end_date->monthName;
             },
 
         );

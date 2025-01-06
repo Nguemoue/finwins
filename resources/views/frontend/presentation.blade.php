@@ -16,23 +16,18 @@
                             {{str($founderDeclaration)->toHtmlString()}}
                         </div>
 
-                        <!-- Section fondatrice -->
-                        <div class="founder-section">
-                            <div class="separator"></div>
-                            <p class="founder-name">La fondatrice</p>
-                            <p class="founder-name">Martine-Cécile Ngo Nyemb-Wisman</p>
-                        </div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-xl-6 col-xxl-6">
                     <div class="presentation-container">
-                        <div class="">
-                            <div class="image-container">
+                        <div class="card">
+                            <div class="card-img">
                                 <!-- Image de Martine-Cécile Ngo Nyemb-Wisman -->
-                                <div class="text-center mb-4"><img src="{{$founderPosterUrl}}" alt="logo"></div>
+                                <div class="text-center mb-4"><img class="img-fluid img-thumbnail" src="{{$founderPosterUrl}}" alt="logo"></div>
+                            </div>
+                            <div class="card-body">
                                 <div>
-                                    <p> {{$founderName}} </p>
-
+                                    <p class="text-center"> {{$founderName}} </p>
                                     <p>
                                         {{str($founderPresentation)->toHtmlString()}}
                                     </p>

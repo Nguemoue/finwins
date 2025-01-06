@@ -23,7 +23,7 @@
                         <div class="card">
                             <div class="card-img">
                                 <!-- Image de Martine-Cécile Ngo Nyemb-Wisman -->
-                                <div class="text-center mb-4"><img class="img-fluid img-thumbnail" src="{{$founderPosterUrl}}" alt="logo"></div>
+                                <div class="text-center mb-4"><img class="img-fluid img-thumbnail" style="object-fit: cover;max-height: 400px"  src="{{$founderPosterUrl}}" alt="logo"></div>
                             </div>
                             <div class="card-body">
                                 <div>

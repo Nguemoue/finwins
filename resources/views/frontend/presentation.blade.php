@@ -27,8 +27,8 @@
                             </div>
                             <div class="">
                                 <div>
-                                    <p class="text-center"> {{$founderName}} </p>
-                                    <p>
+                                    <h3> {{$founderName}} </h3>
+                                    <p class="text-justify">
                                         {{str($founderPresentation)->toHtmlString()}}
                                     </p>
                                 </div>

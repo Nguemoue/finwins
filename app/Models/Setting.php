@@ -17,6 +17,10 @@ class Setting extends Model
     {
         return (string) (self::whereLabel('founder_declaration')->first()->value??null);
     }
+    public static function homePresentationText(): string{
+        return (string) (self::whereLabel('home_presentation')->first()->value??null);
+
+    }
 
 
     protected function casts(): array

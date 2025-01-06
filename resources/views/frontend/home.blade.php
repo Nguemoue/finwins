@@ -32,17 +32,7 @@
                 </div>
                 <div class="container">
                     <div class="mt-4 text-justify">
-                        FINS-WINS
-                        L’Asbl Femmes Interface Nord-Sud (F.I.N.S) ou Women Interface North-South (W.I.N.S) est
-                        fondée en 2008. Elle est conçue comme un mouvement de réflexion et d’actions concrètes en
-                        faveur de la promotion de genre au développement.
-
-                        Elle ambitionne de renforcer l’autonomisation (empowerment) des femmes dans les activités
-                        socioéconomiques, politiques et culturelles.
-
-                        La philosophie générale de FINS-WINS est basée sur les principes de justice, de
-                        complémentarité entre les genres, de réciprocité dans les échanges Nord-Sud et de
-                        Co-développement harmonieux entre les peuples.
+                        {{$homePresentationText}}
                     </div>
                     <div class="">
                         <div class="card-body">

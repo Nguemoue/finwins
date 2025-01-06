@@ -21,14 +21,16 @@ class Presentation extends Page
 
     public array $state = [
         'founder_declaration' => '',
-        'founder_intro' => ''
+        'founder_intro' => '',
+        'home_presentation'=>''
     ];
 
     public function mount(): void
     {
         $this->form->fill([
             'founder_declaration' => Setting::whereLabel('founder_declaration')->first()->value ?? '',
-            'founder_intro' => Setting::whereLabel('founder_intro')->first()->value ?? ''
+            'founder_intro' => Setting::whereLabel('founder_intro')->first()->value ?? '',
+            'home_presentation' => Setting::whereLabel('founder_intro')->first()->value ?? ''
         ]);
     }
 
@@ -36,7 +38,8 @@ class Presentation extends Page
     {
         return $form->schema([
             RichEditor::make('founder_declaration')->columnSpanFull()->label('Declaration de fondation'),
-            RichEditor::make('founder_intro')->columnSpanFull()->label('Fondatrice')
+            RichEditor::make('founder_intro')->columnSpanFull()->label('Fondatrice'),
+            RichEditor::make('home_presentation')->columnSpanFull()->label('Texte presentation accueil')
         ])->statePath('state');
     }
 

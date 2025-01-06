@@ -18,15 +18,15 @@
             <div class="container">
                 <div class="row">
                     @foreach($portraits as $portrait)
-                        <div class="col-md-11 col-sm-11 mx-auto mb-4">
-                            <div class="portrait-card d-flex flex-row-reverse">
-                                <div class="d-flex justify-content-end bg-danger">
-                                        <img src="{{ $portrait->poster_url }}" alt="Portrait de {{ $portrait->nom }}"
-                                             class="portrait-image">
-                                </div>
-                                <div class="card-body text-center">
+                        <div class="col-12 mx-auto mb-4">
+                            <div class="portrait-card row">
+                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-justify">
                                     <p class="portrait-name">{{ $portrait->name }}</p>
                                     <p class="portrait-bio">{{ $content= str($portrait->bio)->toHtmlString() }}</p>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-justify">
+                                    <img src="{{ $portrait->poster_url }}" alt="Portrait de {{ $portrait->nom }}"
+                                         class="portrait-image">
                                 </div>
                             </div>
                         </div>
@@ -54,7 +54,7 @@
 
         .portrait-image {
             width: 100%;
-            height: 250px;
+            min-height: 250px;
             object-fit: cover;
         }
 

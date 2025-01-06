@@ -22,10 +22,13 @@ class DonatorResource extends Resource
     protected static ?string $model = Donator::class;
 
     protected static ?string $slug = 'givers';
+    protected static ?string $recordTitleAttribute = "Donateur";
 
     protected static ?string $navigationLabel = "Donateurs";
 
     protected static ?string $navigationIcon = 'heroicon-o-currency-dollar';
+    
+
 
     public static function form(Form $form): Form
     {

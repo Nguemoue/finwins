@@ -8,7 +8,7 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateDonator extends CreateRecord
 {
     protected static string $resource = DonatorResource::class;
-
+    protected static ?string $title = "Nouveau donateur";
     protected function getHeaderActions(): array
     {
         return [

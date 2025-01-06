@@ -30,7 +30,7 @@ class Presentation extends Page
         $this->form->fill([
             'founder_declaration' => Setting::whereLabel('founder_declaration')->first()->value ?? '',
             'founder_intro' => Setting::whereLabel('founder_intro')->first()->value ?? '',
-            'home_presentation' => Setting::whereLabel('founder_intro')->first()->value ?? ''
+            'home_presentation' => Setting::whereLabel('home_presentation')->first()->value ?? ''
         ]);
     }
 

@@ -32,7 +32,7 @@
                 </div>
                 <div class="container">
                     <div class="mt-4 text-justify">
-                        {{$homePresentationText}}
+                        {{str($homePresentationText)->toHtmlString()}}
                     </div>
                     <div class="">
                         <div class="card-body">

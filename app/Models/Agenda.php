@@ -23,10 +23,7 @@ class Agenda extends Model
         return Attribute::make(
             get: function($value, array $attributes) {
                 //if date of start date is equal to end date
-                if ($this->start_date->toDateString() !==  $this->end_date->toDateString()){
-                       return $this->start_date->day .' au '. $this->end_date->day . ' '. $this->end_date->monthName;
-                }
-                return $this->start_date->isoFormat('d M');
+                return $this->start_date->day .' au '. $this->end_date->day . ' '. $this->end_date->monthName;
             },
 
         );

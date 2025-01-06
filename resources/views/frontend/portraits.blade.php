@@ -18,7 +18,7 @@
             <div class="container">
                 <div class="row">
                     @foreach($portraits as $portrait)
-                        <div class="col-12 mx-auto mb-4">
+                        <div class="col-12 mx-auto mb-5">
                             <div class="portrait-card row">
                                 <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-justify">
                                     <p class="portrait-name">{{ $portrait->name }}</p>

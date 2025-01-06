@@ -11,9 +11,9 @@
         </div>
 
         <div class="container">
-            @foreach($agenda->groupBy(fn(Agenda $agenda) => $agenda->created_at->year) as $year=> $groups)
+            @foreach($agenda->groupBy(fn(Agenda $agenda) => $agenda->start_date->year) as $year=> $groups)
                 <div class="mb-4">
-                    <h2 class="text-black">AGENDA {{$year}}</h2>
+                    <h2 class="text-black mb-2">AGENDA {{$year}}</h2>
                     <div id="accordion-{{$year}}">
                         @foreach($groups as $item)
                             <div class="card mb-4">

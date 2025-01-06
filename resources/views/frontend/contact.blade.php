@@ -4,16 +4,14 @@
     <main>
         <section class="team-section bg-grey bd-bottom circle shape padding">
             <div class="container">
-                <div class="section-heading text-center mb-40">
+                <div class="section-heading text-center mb-4">
                     <h2>Contact</h2>
                 </div>
             </div>
         </section>
         <section class="contact-section padding">
-            <div id="google_map"></div>
             <div class="container">
                 <div class="row contact-wrap align-items-baseline">
-
                     <div class="col-md-6 xs-padding">
                         <div class="contact-form">
                             <h3>Laissez nous un message</h3>
